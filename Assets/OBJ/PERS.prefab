@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4160816491032466387}
   - component: {fileID: 5616688454924616287}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PERS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
