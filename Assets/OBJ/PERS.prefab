@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4160816491032466387}
   - component: {fileID: 5616688454924616287}
+  - component: {fileID: -9116771953651129611}
   m_Layer: 6
   m_Name: PERS
   m_TagString: Untagged
@@ -84,3 +85,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-9116771953651129611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3848466525770242165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c466a38130ef37642898008dfd9fb4b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
