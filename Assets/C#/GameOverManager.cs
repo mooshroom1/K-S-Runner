@@ -4,7 +4,8 @@ using UnityEngine.SceneManagement;
 public class GameOverManager : MonoBehaviour
 {
     public GameObject gameOverUI; 
-    public GameObject player; 
+    public GameObject player;
+    public GameObject pause;
 
     void Update()
     {
@@ -17,7 +18,8 @@ public class GameOverManager : MonoBehaviour
     
     public void ShowGameOverUI()
     {
-        gameOverUI.SetActive(true); 
+        gameOverUI.SetActive(true);
+        pause.SetActive(false);
         Time.timeScale = 0f; 
     }
 
