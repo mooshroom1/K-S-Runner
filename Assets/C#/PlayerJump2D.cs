@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerJump2D : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class PlayerJump2D : MonoBehaviour
     public float groundCheckRadius = 0.2f;
     public Animator animator;
 
+
     private Rigidbody2D rb;
     private bool isGrounded;
     private bool isCharging;
@@ -20,6 +22,7 @@ public class PlayerJump2D : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         Time.timeScale = 1f;
         Application.targetFrameRate = 120;
+
     }
 
     void Update()
@@ -33,13 +36,18 @@ public class PlayerJump2D : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && isGrounded)
         {
             isCharging = true;
-            chargeAmount = 0f; 
+            chargeAmount = 0f;
+
+            
         }
 
         if (Input.GetMouseButton(0) && isCharging)
         {
             chargeAmount += Time.deltaTime / chargeTime; 
-            chargeAmount = Mathf.Clamp01(chargeAmount); 
+            chargeAmount = Mathf.Clamp01(chargeAmount);
+
+          
+
         }
 
         
@@ -47,6 +55,7 @@ public class PlayerJump2D : MonoBehaviour
         {
             Jump();
             isCharging = false;
+
         }
     }
 
@@ -57,6 +66,7 @@ public class PlayerJump2D : MonoBehaviour
         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         animator.SetTrigger("Jumping");
     }
+   
 
     void OnDrawGizmosSelected()
     {
