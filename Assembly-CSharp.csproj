@@ -61,12 +61,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\C#\MoveBackground.cs" />
+    <Compile Include="Assets\C#\MusicManager.cs" />
+    <Compile Include="Assets\C#\SceneFadeIn.cs" />
     <Compile Include="Assets\C#\DestroyOnTrigger.cs" />
     <Compile Include="Assets\C#\MoveLeft.cs" />
     <Compile Include="Assets\C#\MainMenu.cs" />
     <Compile Include="Assets\C#\Player.cs" />
+    <Compile Include="Assets\C#\ChangeTransparency.cs" />
     <Compile Include="Assets\C#\GameOverManager.cs" />
     <Compile Include="Assets\C#\Spawner.cs" />
+    <Compile Include="Assets\C#\PauseMenu.cs" />
     <Compile Include="Assets\C#\DIstanceCounter.cs" />
     <Compile Include="Assets\C#\PlayerJump2D.cs" />
   </ItemGroup>
